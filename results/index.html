@@ -1,0 +1,79 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/common.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/print.css" media="print">
+    <script type="text/javascript" src="../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <title>MIRU2023 OS2A-S2: 非剛体位置合わせの全体最適化による連続組織切片からの3次元復元</title>
+</head>
+
+<body>
+<a href="http://cvim.ipsj.or.jp/MIRU2023/" rel="nofollow">第26回画像の認識・理解シンポジウム(MIRU2023)</a>, OS2A-S2</p>
+<p><img src="./thumbnail.png" alt="グラフ上で最適化" title="thumbnail" style="max-width: 480px;"></a></p>
+<h1>非剛体位置合わせの全体最適化による連続組織切片からの3次元復元</h1>
+<p>舩冨卓哉 (NAIST, JSTさきがけ), 山田重人, 宇都宮夏子 (京大), 藤村友貴, 櫛田貴弘, 向川康博 (NAIST)</p>
+<h2> Results </h2>
+<div dir="auto">
+    <details open class="details-reset border rounded-2">
+        <summary>input</summary>
+        <video
+            src="./CS16_01629-input.mp4"
+            controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit"
+            style="max-width:45%; min-width: 200px">
+        </video>
+        <iframe title="3D reconstruction"
+            width="45%" height="480px"
+            src="./CS16_01629-input.html"></iframe>
+    </details>
+</div>
+<div dir="auto">
+    <details class="details-reset border rounded-2">
+        <summary>逐次位置合わせ（剛体）</summary>
+        <video
+            src="./CS16_01629-seqRD.mp4"
+            controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit"
+            style="max-width:45%; min-width: 200px">
+        </video>
+        <iframe title="3D reconstruction"
+            width="45%" height="480px"
+            src="./CS16_01629-seqRD.html"></iframe>
+    </details>
+</div>
+<div dir="auto">
+    <details class="details-reset border rounded-2">
+        <summary>逐次位置合わせ（非剛体）</summary>
+        <video
+            src="./CS16_01629-seqNR.mp4"
+            controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit"
+            style="max-width:45%; min-width: 200px">
+        </video>
+        <iframe title="3D reconstruction"
+            width="45%" height="480px"
+            src="./CS16_01629-seqNR.html"></iframe>
+    </details>
+</div>
+<div dir="auto">
+    <details open class="details-reset border rounded-2">
+        <summary>ours</summary>
+        <video
+            src="./CS16_01629-ours.mp4"
+            controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit"
+            style="max-width:45%; min-width: 200px">
+        </video>
+        <iframe title="3D reconstruction"
+            width="45%" height="480px"
+            src="./CS16_01629-ours.html"></iframe>
+    </details>
+</div>
+
+</html>
